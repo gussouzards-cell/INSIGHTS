@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUAP INSIGHTS - Dashboard de Insights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="web-container">
+        <div class="web-header">
+            <div>
+                <h1>📊 Dashboard de Insights</h1>
+                <p style="color: var(--fluap-text-secondary); margin-top: 4px;">KPIs gerados por IA em tempo real</p>
+            </div>
+            <div>
+                <button class="btn btn-secondary">Exportar Relatório</button>
+            </div>
+        </div>
+
+        <div class="grid grid-4" style="margin-bottom: var(--spacing);">
+            <div class="kpi-card">
+                <div class="kpi-label">Médicos em Risco</div>
+                <div class="kpi-value" style="color: var(--fluap-danger);">23</div>
+                <div style="font-size: 12px; color: var(--fluap-text-secondary);">↑ 12% vs mês anterior</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Oportunidades</div>
+                <div class="kpi-value" style="color: var(--fluap-success);">47</div>
+                <div style="font-size: 12px; color: var(--fluap-text-secondary);">↑ 8% vs mês anterior</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Taxa de Conversão</div>
+                <div class="kpi-value" style="color: var(--fluap-primary);">68%</div>
+                <div style="font-size: 12px; color: var(--fluap-text-secondary);">↓ 3% vs mês anterior</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Previsão Mensal</div>
+                <div class="kpi-value" style="color: var(--fluap-info);">R$ 2.4M</div>
+                <div style="font-size: 12px; color: var(--fluap-text-secondary);">Baseado em IA</div>
+            </div>
+        </div>
+
+        <div class="grid grid-2" style="margin-bottom: var(--spacing);">
+            <div class="InsightCard">
+                <h3>🚨 Médicos com Maior Risco</h3>
+                <ul class="doctor-list" style="margin-top: 16px;">
+                    <li class="doctor-list-item">
+                        <div>
+                            <div style="font-weight: 600;">Dr. Carlos Mendes</div>
+                            <div style="font-size: 12px; color: var(--fluap-text-secondary);">Cardiologia - 45 dias sem visita</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="RiskTag risk">Alto Risco</span>
+                            <div style="font-size: 12px; color: var(--fluap-danger); margin-top: 4px;">35% conversão</div>
+                        </div>
+                    </li>
+                    <li class="doctor-list-item">
+                        <div>
+                            <div style="font-weight: 600;">Dra. Juliana Ferreira</div>
+                            <div style="font-size: 12px; color: var(--fluap-text-secondary);">Pediatria - 38 dias sem visita</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="RiskTag risk">Alto Risco</span>
+                            <div style="font-size: 12px; color: var(--fluap-danger); margin-top: 4px;">42% conversão</div>
+                        </div>
+                    </li>
+                    <li class="doctor-list-item">
+                        <div>
+                            <div style="font-weight: 600;">Dr. Roberto Lima</div>
+                            <div style="font-size: 12px; color: var(--fluap-text-secondary);">Ortopedia - 32 dias sem visita</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="RiskTag risk">Médio Risco</span>
+                            <div style="font-size: 12px; color: var(--fluap-warning); margin-top: 4px;">58% conversão</div>
+                        </div>
+                    </li>
+                    <li class="doctor-list-item">
+                        <div>
+                            <div style="font-weight: 600;">Dra. Mariana Costa</div>
+                            <div style="font-size: 12px; color: var(--fluap-text-secondary);">Dermatologia - 30 dias sem visita</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="RiskTag risk">Médio Risco</span>
+                            <div style="font-size: 12px; color: var(--fluap-warning); margin-top: 4px;">61% conversão</div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: 16px;">Ver Todos</button>
+            </div>
+
+            <div class="InsightCard">
+                <h3>💡 Top Oportunidades</h3>
+                <ul class="doctor-list" style="margin-top: 16px;">
+                    <li class="doctor-list-item">
+                        <div>
+                            <div style="font-weight: 600;">Dra. Ana Silva</div>
+                            <div style="font-size: 12px; color: var(--fluap-text-secondary);">Pediatria - Interesse demonstrado</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="RiskTag opportunity">Alta</span>
+                            <div style="font-size: 12px; color: var(--fluap-success); margin-top: 4px;">85% conversão</div>
+                        </div>
+                    </li>
+                    <li class="doctor-list-item">
+                        <div>
+                            <div style="font-weight: 600;">Dr. Paulo Santos</div>
+                            <div style="font-size: 12px; color: var(--fluap-text-secondary);">Neurologia - Perfil compatível</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="RiskTag opportunity">Alta</span>
+                            <div style="font-size: 12px; color: var(--fluap-success); margin-top: 4px;">82% conversão</div>
+                        </div>
+                    </li>
+                    <li class="doctor-list-item">
+                        <div>
+                            <div style="font-weight: 600;">Dr. Fernando Alves</div>
+                            <div style="font-size: 12px; color: var(--fluap-text-secondary);">Cardiologia - Novo produto</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="RiskTag opportunity">Média</span>
+                            <div style="font-size: 12px; color: var(--fluap-success); margin-top: 4px;">75% conversão</div>
+                        </div>
+                    </li>
+                    <li class="doctor-list-item">
+                        <div>
+                            <div style="font-weight: 600;">Dra. Patricia Rocha</div>
+                            <div style="font-size: 12px; color: var(--fluap-text-secondary);">Dermatologia - Expansão</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="RiskTag opportunity">Média</span>
+                            <div style="font-size: 12px; color: var(--fluap-success); margin-top: 4px;">73% conversão</div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: 16px;">Ver Todos</button>
+            </div>
+        </div>
+
+        <div class="InsightCard">
+            <h3>🗺️ Mapa de Oportunidades por Região</h3>
+            <div class="map-container">
+                <div style="text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">🗺️</div>
+                    <p style="font-weight: 600; margin-bottom: 8px;">Mapa Interativo de Oportunidades</p>
+                    <p style="font-size: 14px; color: var(--fluap-text-secondary);">
+                        Regiões destacadas: Sudeste (23 oportunidades), Sul (15 oportunidades), Nordeste (9 oportunidades)
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-3" style="margin-top: var(--spacing);">
+                <div style="text-align: center; padding: 16px; background: var(--fluap-primary-light); border-radius: var(--border-radius);">
+                    <div style="font-size: 24px; font-weight: 700; color: var(--fluap-primary);">23</div>
+                    <div style="font-size: 12px; color: var(--fluap-text-secondary); margin-top: 4px;">Sudeste</div>
+                </div>
+                <div style="text-align: center; padding: 16px; background: var(--fluap-primary-light); border-radius: var(--border-radius);">
+                    <div style="font-size: 24px; font-weight: 700; color: var(--fluap-primary);">15</div>
+                    <div style="font-size: 12px; color: var(--fluap-text-secondary); margin-top: 4px;">Sul</div>
+                </div>
+                <div style="text-align: center; padding: 16px; background: var(--fluap-primary-light); border-radius: var(--border-radius);">
+                    <div style="font-size: 24px; font-weight: 700; color: var(--fluap-primary);">9</div>
+                    <div style="font-size: 12px; color: var(--fluap-text-secondary); margin-top: 4px;">Nordeste</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

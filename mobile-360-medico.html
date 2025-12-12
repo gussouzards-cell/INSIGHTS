@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUAP INSIGHTS - 360° do Médico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <div class="mobile-header">
+            <h1>👨‍⚕️ 360° do Médico</h1>
+            <p>Visão completa do relacionamento</p>
+        </div>
+
+        <div class="DoctorSummaryWidget">
+            <div class="doctor-header">
+                <div>
+                    <div class="doctor-name">Dr. Carlos Mendes</div>
+                    <div class="doctor-specialty">Cardiologia - Clínica São Paulo</div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="font-size: 24px; font-weight: 700; color: var(--fluap-danger);">⚠️</div>
+                    <div style="font-size: 12px; color: var(--fluap-text-secondary);">Alto Risco</div>
+                </div>
+            </div>
+
+            <div style="margin: var(--spacing) 0;">
+                <h3 style="color: var(--fluap-primary); margin-bottom: 12px; font-size: 16px;">Resumo do Relacionamento</h3>
+                <div style="background: var(--fluap-bg); padding: 16px; border-radius: var(--border-radius);">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                        <span style="color: var(--fluap-text-secondary);">Última visita:</span>
+                        <span style="font-weight: 600;">45 dias atrás</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                        <span style="color: var(--fluap-text-secondary);">Prescrições (últimos 3 meses):</span>
+                        <span style="font-weight: 600;">12 unidades</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                        <span style="color: var(--fluap-text-secondary);">Relacionamento:</span>
+                        <span style="font-weight: 600; color: var(--fluap-danger);">Em declínio</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span style="color: var(--fluap-text-secondary);">Probabilidade de conversão:</span>
+                        <span style="font-weight: 600; color: var(--fluap-danger);">35%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relationship-chart">
+                📊 Gráfico de Relacionamento
+                <br>
+                <small style="font-size: 12px; opacity: 0.7;">Tendência: Declinando nos últimos 60 dias</small>
+            </div>
+
+            <div style="margin: var(--spacing) 0;">
+                <h3 style="color: var(--fluap-primary); margin-bottom: 12px; font-size: 16px;">Insights Acionáveis</h3>
+                <div class="InsightCard" style="margin-bottom: 12px;">
+                    <p>📉 Prescrições caíram 40% comparado ao trimestre anterior</p>
+                </div>
+                <div class="InsightCard" style="margin-bottom: 12px;">
+                    <p>⏰ Intervalo entre visitas aumentou de 21 para 45 dias</p>
+                </div>
+                <div class="InsightCard">
+                    <p>💬 Última interação foi negativa - médico mencionou preço</p>
+                </div>
+            </div>
+
+            <div class="NextActionCard">
+                <h4>🎯 Próxima Ação Sugerida</h4>
+                <p style="margin-bottom: 16px; font-weight: 600; color: var(--fluap-text-primary);">
+                    Visita presencial urgente com proposta de desconto
+                </p>
+                <div style="background: var(--fluap-white); padding: 16px; border-radius: var(--border-radius); margin-bottom: 16px;">
+                    <h5 style="color: var(--fluap-primary); margin-bottom: 8px; font-size: 14px;">Por que sugerimos isso?</h5>
+                    <ul style="padding-left: 20px; color: var(--fluap-text-secondary); font-size: 14px;">
+                        <li>Risco de perda de relacionamento em 30 dias</li>
+                        <li>Médico demonstrou interesse em alternativas</li>
+                        <li>Histórico positivo anterior (6 meses atrás)</li>
+                        <li>Oportunidade de recuperação com ação imediata</li>
+                    </ul>
+                </div>
+                <div class="quick-actions">
+                    <button class="quick-action-btn">Adicionar à Rota</button>
+                    <button class="quick-action-btn">Agendar Visita</button>
+                    <button class="quick-action-btn">Enviar Material</button>
+                </div>
+            </div>
+
+            <div style="margin-top: var(--spacing);">
+                <h3 style="color: var(--fluap-primary); margin-bottom: 12px; font-size: 16px;">Previsão de Conversão</h3>
+                <div class="InsightCard">
+                    <div style="text-align: center;">
+                        <div style="font-size: 48px; font-weight: 700; color: var(--fluap-danger); margin: 16px 0;">35%</div>
+                        <p style="color: var(--fluap-text-secondary);">Probabilidade de manter relacionamento nos próximos 30 dias</p>
+                        <div style="margin-top: 16px; padding: 12px; background: var(--fluap-primary-light); border-radius: var(--border-radius);">
+                            <p style="font-size: 12px; color: var(--fluap-primary);">
+                                <strong>Com ação sugerida:</strong> Probabilidade aumenta para 72%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--fluap-white); padding: 16px; box-shadow: 0 -2px 8px rgba(0,0,0,0.1); display: flex; justify-content: space-around;">
+            <button class="btn btn-secondary" style="flex: 1; margin: 0 4px;">Sugestões</button>
+            <button class="btn btn-primary" style="flex: 1; margin: 0 4px;">360° Médico</button>
+            <button class="btn btn-secondary" style="flex: 1; margin: 0 4px;">Assistente IA</button>
+        </nav>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUAP INSIGHTS - Perguntas Naturais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="web-container">
+        <div class="web-header">
+            <div>
+                <h1>💬 Perguntas Naturais</h1>
+                <p style="color: var(--fluap-text-secondary); margin-top: 4px;">Consulte insights em linguagem natural</p>
+            </div>
+        </div>
+
+        <div class="InsightCard" style="margin-bottom: var(--spacing);">
+            <h3 style="margin-bottom: 16px;">Faça sua pergunta</h3>
+            <textarea 
+                class="textarea-field" 
+                placeholder="Ex: Quais são as principais tendências de prescrição este mês? Quais regiões têm maior potencial de crescimento? Qual a melhor estratégia para aumentar conversões no Q3?"
+                rows="5"
+            ></textarea>
+            <div style="display: flex; gap: 12px; margin-top: 16px;">
+                <button class="btn btn-primary">Enviar Pergunta</button>
+                <button class="btn btn-secondary">Limpar</button>
+            </div>
+        </div>
+
+        <div class="AIResponseCard" style="margin-bottom: var(--spacing);">
+            <div class="response-header">
+                <h3>Resposta da IA</h3>
+            </div>
+            <div style="margin-bottom: 16px;">
+                <p style="font-weight: 600; color: var(--fluap-text-primary); margin-bottom: 12px;">
+                    "Quais são as principais tendências de prescrição este mês?"
+                </p>
+            </div>
+            
+            <div class="grid grid-2" style="margin-bottom: var(--spacing);">
+                <div class="InsightCard" style="margin-bottom: 0;">
+                    <h4 style="color: var(--fluap-primary); margin-bottom: 12px; font-size: 16px;">📈 Tendência Principal</h4>
+                    <p style="font-size: 14px; margin-bottom: 12px;">
+                        <strong>Aumento de 15%</strong> em prescrições de produtos cardiovasculares na região Sudeste.
+                    </p>
+                    <div style="padding: 12px; background: var(--fluap-primary-light); border-radius: var(--border-radius);">
+                        <p style="font-size: 12px; color: var(--fluap-primary);">
+                            <strong>Motivo:</strong> Campanha de conscientização sobre hipertensão teve impacto positivo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="InsightCard" style="margin-bottom: 0;">
+                    <h4 style="color: var(--fluap-primary); margin-bottom: 12px; font-size: 16px;">🎯 Oportunidade</h4>
+                    <p style="font-size: 14px; margin-bottom: 12px;">
+                        <strong>Pediatria</strong> mostra crescimento de 22% em interesse por novos produtos.
+                    </p>
+                    <div style="padding: 12px; background: #E8F5E9; border-radius: var(--border-radius);">
+                        <p style="font-size: 12px; color: var(--fluap-success);">
+                            <strong>Ação:</strong> Priorizar visitas a pediatras nas próximas 2 semanas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="InsightCard" style="margin-bottom: 0;">
+                <h4 style="color: var(--fluap-primary); margin-bottom: 12px; font-size: 16px;">📊 Análise Detalhada</h4>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+                    <div style="text-align: center; padding: 16px; background: var(--fluap-bg); border-radius: var(--border-radius);">
+                        <div style="font-size: 24px; font-weight: 700; color: var(--fluap-primary);">+15%</div>
+                        <div style="font-size: 12px; color: var(--fluap-text-secondary); margin-top: 4px;">Cardiologia</div>
+                    </div>
+                    <div style="text-align: center; padding: 16px; background: var(--fluap-bg); border-radius: var(--border-radius);">
+                        <div style="font-size: 24px; font-weight: 700; color: var(--fluap-success);">+22%</div>
+                        <div style="font-size: 12px; color: var(--fluap-text-secondary); margin-top: 4px;">Pediatria</div>
+                    </div>
+                    <div style="text-align: center; padding: 16px; background: var(--fluap-bg); border-radius: var(--border-radius);">
+                        <div style="font-size: 24px; font-weight: 700; color: var(--fluap-warning);">-5%</div>
+                        <div style="font-size: 12px; color: var(--fluap-text-secondary); margin-top: 4px;">Dermatologia</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: var(--spacing);">
+                <button class="btn btn-primary">Exportar Resposta</button>
+                <button class="btn btn-secondary">Compartilhar</button>
+            </div>
+        </div>
+
+        <div class="InsightCard">
+            <h3>📜 Histórico de Perguntas</h3>
+            <div class="question-history">
+                <div class="question-history-item">
+                    <div class="question">"Quais regiões têm maior potencial de crescimento?"</div>
+                    <div class="timestamp">Há 2 horas</div>
+                    <button class="btn btn-secondary" style="margin-top: 8px; padding: 8px 16px; font-size: 12px;">Ver Resposta</button>
+                </div>
+                <div class="question-history-item">
+                    <div class="question">"Qual a melhor estratégia para aumentar conversões no Q3?"</div>
+                    <div class="timestamp">Ontem</div>
+                    <button class="btn btn-secondary" style="margin-top: 8px; padding: 8px 16px; font-size: 12px;">Ver Resposta</button>
+                </div>
+                <div class="question-history-item">
+                    <div class="question">"Quais médicos estão em risco de perder relacionamento?"</div>
+                    <div class="timestamp">2 dias atrás</div>
+                    <button class="btn btn-secondary" style="margin-top: 8px; padding: 8px 16px; font-size: 12px;">Ver Resposta</button>
+                </div>
+                <div class="question-history-item">
+                    <div class="question">"Como está o desempenho da equipe este mês?"</div>
+                    <div class="timestamp">3 dias atrás</div>
+                    <button class="btn btn-secondary" style="margin-top: 8px; padding: 8px 16px; font-size: 12px;">Ver Resposta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

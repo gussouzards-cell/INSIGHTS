@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUAP INSIGHTS - Assistente IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <div class="mobile-header">
+            <h1>🤖 Assistente IA</h1>
+            <p>Pergunte em linguagem natural</p>
+        </div>
+
+        <div style="margin-bottom: var(--spacing);">
+            <textarea 
+                class="textarea-field" 
+                placeholder="Ex: Quais médicos preciso visitar hoje? Quem está em risco de perder relacionamento? Qual a melhor rota para hoje?"
+                rows="4"
+            ></textarea>
+            <button class="btn btn-primary" style="width: 100%; margin-top: 12px;">
+                Enviar Pergunta
+            </button>
+        </div>
+
+        <div class="AIResponseCard">
+            <div class="response-header">
+                <h3>Resposta da IA</h3>
+            </div>
+            <p style="margin-bottom: 16px;">
+                Com base na análise dos seus relacionamentos, recomendo priorizar 3 médicos hoje:
+            </p>
+            
+            <div class="InsightCard" style="margin-bottom: 12px;">
+                <h4 style="color: var(--fluap-primary); margin-bottom: 8px;">1. Dr. Carlos Mendes</h4>
+                <p style="font-size: 14px; margin-bottom: 8px;">
+                    <strong>Motivo:</strong> Risco alto de perda de relacionamento. Última visita há 45 dias.
+                </p>
+                <span class="RiskTag risk">Urgente</span>
+            </div>
+
+            <div class="InsightCard" style="margin-bottom: 12px;">
+                <h4 style="color: var(--fluap-primary); margin-bottom: 8px;">2. Dra. Ana Silva</h4>
+                <p style="font-size: 14px; margin-bottom: 8px;">
+                    <strong>Motivo:</strong> Oportunidade de aumentar prescrições. Demonstrou interesse recente.
+                </p>
+                <span class="RiskTag opportunity">Oportunidade</span>
+            </div>
+
+            <div class="InsightCard" style="margin-bottom: 16px;">
+                <h4 style="color: var(--fluap-primary); margin-bottom: 8px;">3. Dr. Roberto Alves</h4>
+                <p style="font-size: 14px; margin-bottom: 8px;">
+                    <strong>Motivo:</strong> Perfil compatível com novo produto. Enviar material informativo.
+                </p>
+                <span class="RiskTag opportunity">Ação Rápida</span>
+            </div>
+
+            <div class="quick-actions">
+                <button class="quick-action-btn">Adicionar à Rota</button>
+                <button class="quick-action-btn">Enviar Material</button>
+                <button class="quick-action-btn">Ver Detalhes</button>
+            </div>
+        </div>
+
+        <div class="AIResponseCard" style="opacity: 0.7;">
+            <div class="response-header">
+                <h3>Pergunta Anterior</h3>
+            </div>
+            <p style="margin-bottom: 8px; font-weight: 600;">
+                "Quem são os médicos com maior potencial este mês?"
+            </p>
+            <p style="font-size: 12px; color: var(--fluap-text-secondary);">
+                Há 2 horas
+            </p>
+        </div>
+
+        <div class="AIResponseCard" style="opacity: 0.7;">
+            <div class="response-header">
+                <h3>Pergunta Anterior</h3>
+            </div>
+            <p style="margin-bottom: 8px; font-weight: 600;">
+                "Qual a melhor estratégia para o Dr. Mendes?"
+            </p>
+            <p style="font-size: 12px; color: var(--fluap-text-secondary);">
+                Ontem
+            </p>
+        </div>
+
+        <nav style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--fluap-white); padding: 16px; box-shadow: 0 -2px 8px rgba(0,0,0,0.1); display: flex; justify-content: space-around;">
+            <button class="btn btn-secondary" style="flex: 1; margin: 0 4px;">Sugestões</button>
+            <button class="btn btn-secondary" style="flex: 1; margin: 0 4px;">360° Médico</button>
+            <button class="btn btn-primary" style="flex: 1; margin: 0 4px;">Assistente IA</button>
+        </nav>
+    </div>
+</body>
+</html>
+

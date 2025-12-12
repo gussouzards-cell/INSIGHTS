@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUAP INSIGHTS - Navegação</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .navigation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing);
+            margin-top: var(--spacing);
+        }
+        .nav-card {
+            background: var(--fluap-white);
+            border-radius: var(--border-radius);
+            padding: var(--spacing);
+            box-shadow: var(--shadow);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: all 0.2s;
+        }
+        .nav-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+        .nav-card h2 {
+            color: var(--fluap-primary);
+            margin-bottom: 8px;
+        }
+        .nav-card p {
+            color: var(--fluap-text-secondary);
+            font-size: 14px;
+        }
+        .nav-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background: var(--fluap-primary-light);
+            color: var(--fluap-primary);
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="web-container">
+        <div class="web-header">
+            <div>
+                <h1>🚀 FLUAP INSIGHTS</h1>
+                <p style="color: var(--fluap-text-secondary); margin-top: 4px;">Copiloto de IA - Navegação</p>
+            </div>
+        </div>
+
+        <div class="InsightCard">
+            <h3>📱 Telas Mobile (Propagandistas)</h3>
+            <div class="navigation-grid">
+                <a href="mobile-sugestoes-dia.html" class="nav-card">
+                    <h2>💡 Sugestões do Dia</h2>
+                    <p>Lista de médicos com sugestão automática e indicadores de prioridade, risco e oportunidade.</p>
+                    <span class="nav-badge">Mobile</span>
+                </a>
+                <a href="mobile-360-medico.html" class="nav-card">
+                    <h2>👨‍⚕️ 360° do Médico</h2>
+                    <p>Resumo do relacionamento, insights acionáveis, última visita e próxima ação sugerida.</p>
+                    <span class="nav-badge">Mobile</span>
+                </a>
+                <a href="mobile-assistente-ia.html" class="nav-card">
+                    <h2>🤖 Assistente IA</h2>
+                    <p>Campo para pergunta em linguagem natural com respostas estruturadas em cards.</p>
+                    <span class="nav-badge">Mobile</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="InsightCard" style="margin-top: var(--spacing);">
+            <h3>💻 Telas Web (Gestores)</h3>
+            <div class="navigation-grid">
+                <a href="web-dashboard-insights.html" class="nav-card">
+                    <h2>📊 Dashboard de Insights</h2>
+                    <p>KPIs gerados por IA, médicos com maior risco e mapa de oportunidades por região.</p>
+                    <span class="nav-badge">Web</span>
+                </a>
+                <a href="web-previsoes-tendencias.html" class="nav-card">
+                    <h2>📈 Previsões e Tendências</h2>
+                    <p>Curvas de probabilidade, segmentação por região e análise de sazonalidade.</p>
+                    <span class="nav-badge">Web</span>
+                </a>
+                <a href="web-perguntas-naturais.html" class="nav-card">
+                    <h2>💬 Perguntas Naturais</h2>
+                    <p>Campo de consulta, histórico de perguntas e botão para exportar respostas.</p>
+                    <span class="nav-badge">Web</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="InsightCard" style="margin-top: var(--spacing);">
+            <h3>🎨 Componentes Reutilizáveis</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 16px;">
+                <div style="padding: 16px; background: var(--fluap-bg); border-radius: var(--border-radius);">
+                    <strong>InsightCard</strong>
+                    <p style="font-size: 12px; color: var(--fluap-text-secondary); margin-top: 4px;">Card de insights com hover</p>
+                </div>
+                <div style="padding: 16px; background: var(--fluap-bg); border-radius: var(--border-radius);">
+                    <strong>RiskTag</strong>
+                    <p style="font-size: 12px; color: var(--fluap-text-secondary); margin-top: 4px;">Tags de prioridade/risco</p>
+                </div>
+                <div style="padding: 16px; background: var(--fluap-bg); border-radius: var(--border-radius);">
+                    <strong>NextActionCard</strong>
+                    <p style="font-size: 12px; color: var(--fluap-text-secondary); margin-top: 4px;">Card de próxima ação</p>
+                </div>
+                <div style="padding: 16px; background: var(--fluap-bg); border-radius: var(--border-radius);">
+                    <strong>AIResponseCard</strong>
+                    <p style="font-size: 12px; color: var(--fluap-text-secondary); margin-top: 4px;">Card de resposta IA</p>
+                </div>
+                <div style="padding: 16px; background: var(--fluap-bg); border-radius: var(--border-radius);">
+                    <strong>DoctorSummaryWidget</strong>
+                    <p style="font-size: 12px; color: var(--fluap-text-secondary); margin-top: 4px;">Widget resumo médico</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
